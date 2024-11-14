@@ -7,7 +7,7 @@ elif c == '-':
     print(a-b)
 elif c == '*':
     print(a*b)
-elif c == '/':
+elif c == '/' and  b != 0:
     print(a/b)
 else:
-    print("Try numbers")
+    print("Try numbers that are not equal to zero")
