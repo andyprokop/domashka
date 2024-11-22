@@ -1,6 +1,7 @@
 from yaml import YAMLObject
 
 x = input(str('Do you want to continue? Print y/n: '))
+
 while x == 'y':
     a = int(input("Type first figure: "))
     c = input("Select needed action (+, -, *, /): ")
