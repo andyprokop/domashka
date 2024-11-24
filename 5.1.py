@@ -6,10 +6,11 @@ from sys import excepthook
 words = keyword.kwlist
 a = string.punctuation
 char = list(a)
-print(char)
+#print(char)
 
 char.remove("_")
-print(char)
+char.append((" "))
+#print(char)
 #char = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', "'", '<', '>', ',', '.', '?', '/', '~', '`',' ']
 #if my_string[0].isdigit():
 
