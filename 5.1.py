@@ -3,7 +3,9 @@ import string
 from curses.ascii import islower
 from sys import excepthook
 
-words = ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+words = keyword.kwlist
+char = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', "'", '<', '>', ',', '.', '?', '/', '~', '`',' ']
+
 
 my_string = input(str("type your input: "))
 my_string_new = my_string.split("_")
@@ -19,30 +21,12 @@ elif my_string.find('0') == 0 or my_string.find('1') == 0 or my_string.find('2')
     print ('False')
 elif any(word in words for word in my_string_new) and x <= 1:
     print ('False')
-elif my_string.find('_') >= 0:
-    print ('True')
-elif my_string.isalnum() != True:
+elif any(character in char for character in my_string):
     print ('False')
+#elif my_string.find('_') >= 0:
+ #   print ('True')
+#elif my_string.isalnum() != True:
+  #  print ('False')
 else:
     print ("True")
 
-
-#ind = my_string.find('e')
-#ind = my_string.find('e', ind + 1) # Пошук індексу наступного елемента
-#print(ind)
-#print(my_string.find('e', ind + 1))
-
-
-#x = my_string.isalnum()#пробіл і знаки пунктуації (взяти можна тут string.punctuation), окрім нижнього підкреслення "_". - done
-
-#починатися з цифри - done
-#print(my_string.islower())#містити великі літери - done
-#бути жодним із зареєстрованих слів.
-
-#digit = 0
-#for s in my_string:
-   # if s.isalnum():
-      #  digit += 1
-       # print(s, end='')
-#print(keyword.kwlist)
-#print(digit)
