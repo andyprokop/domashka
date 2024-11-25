@@ -1,6 +1,6 @@
 x = int(input('Type here: '))
 
-number_of_day_seconds = 86400
+number_of_day_seconds = 24*60*60
 number_of_hour_seconds = 3600
 number_of_minute_seconds = 60
 
