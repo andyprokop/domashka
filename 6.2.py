@@ -1,7 +1,9 @@
 x = int(input('Type here: '))
-number_of_day_seconds = 86400
+
+number_of_day_seconds = 24*60*60
 number_of_hour_seconds = 3600
 number_of_minute_seconds = 60
+
 days = x // number_of_day_seconds
 after_days = x % number_of_day_seconds
 
@@ -10,6 +12,7 @@ after_hours = after_days % number_of_hour_seconds
 
 minutes = after_hours // number_of_minute_seconds
 seconds = after_hours % number_of_minute_seconds
+
 if days % 10 == 2 or days % 10 == 3 or days % 10 == 4 and days != 11 and days != 14:
     print(days,'дні,','',end='')
 elif days % 10 == 1 and days != 11:
