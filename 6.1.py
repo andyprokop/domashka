@@ -12,7 +12,6 @@
 
 import string
 
-
 x = string.ascii_letters
 #print(x)
 inp = input("please type: ")
